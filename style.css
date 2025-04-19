@@ -1,5 +1,6 @@
 body {
     display:flex;
+    flex:1 1 auto;
     flex-flow:column;
     margin:0px;
 }
@@ -7,9 +8,10 @@ body {
                                                                                      /* TOP SECTION WITH HEADER AND BIG HOT-DOG IMAGE */
 .top-container {
     display:flex;
-    height:800px;
+    height:auto;
     flex-flow:column;
     align-items:flex-end;
+    flex:1 1 auto;
     gap:200px;
     background-color:rgb(33, 33, 66);
 }
@@ -50,8 +52,10 @@ a {
 
 .left-content { display:flex;
     flex-flow:column;
-    width:400px;
-    height:100px;
+    width:auto;
+    max-width:500px;
+    height:auto;
+    max-height:100px;
     gap:10px;
     margin-bottom:342px;
 }
@@ -59,12 +63,14 @@ a {
 .top-title {
     color:white;
     font-weight:1000;
-    font-size:50px;
+    font-size:300%;
 }
 
 .button {
-    width:100px;
-    height:30px;
+    width:auto;
+    height:auto;
+    min-width:150px;
+    min-height:30px;
     background-color:rgb(0, 132, 255);
     color:white;
     font-weight:800;
@@ -104,8 +110,9 @@ a {
 }
 
 .box { 
-    max-width:350px;
-    height:300px;
+    
+    max-width:250px;
+    max-height:300px;
     margin:20px;
     border:solid;
     border-color: rgb(0, 132, 255);
@@ -156,7 +163,7 @@ a {
     color:black;
     text-align:start;
     margin:100px;
-    width:800px;
+    width:auto;;
     align-self:center;
 }
 
@@ -190,7 +197,7 @@ a {
 
 .sign-up {
     text-align:center;
-    width:150px;
+    min-width:150px;
     border-radius:13%;
     background-color:rgb(0, 133, 255);
     border-color:white;
